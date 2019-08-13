@@ -1,0 +1,116 @@
+﻿
+/*--头部颜色层级改变--*/
+.change_index{
+    position:relative;
+    background-color:#f6f6f6;
+    z-index:10
+}
+
+.newheader{
+    position:absolute;
+    top:0;
+    height:35px;
+    width:100%;
+    line-height:35px;
+    z-index:5
+}
+.newheader .op{
+    float:right;
+    width:92px;
+    margin-right: 10px;
+}
+.newheader .op a:before{
+    position: absolute;
+    width: 1px; 
+    height: 12px;
+    content: ' ';
+    top: 50%;
+    left: 0;
+    margin: -6px 0 0 -6px;
+    background-color: #777;
+}
+.newheader .op a:first-child:before{display:none}
+.newheader .op a{
+    position: relative;
+    float:left;color:#777;
+    margin-left:11px}
+.newheader .op .user{
+    float: right;
+    width: 34px;
+    height: 34px;
+}
+.newheader .op .user:after{
+    float:left;
+    width:30px;
+    height:30px;
+    content:'';
+    margin:4px 0px 0px;
+    background: url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) no-repeat -90px -8px;
+    -webkit-background-size:342px auto;
+    -moz-background-size:342px auto;
+    -o-background-size:342px auto;
+    -ms-background-size:342px auto;
+    background-size:342px auto;
+}
+/*--头部颜色层级改变--*/
+
+/*--搜索框及导航--*/
+.search_box{
+    position:relative;
+    background-color:#f6f6f5;
+}
+.search_box .logo{
+    display:block;
+    position:relative;
+    width:163px;
+    text-align:center;
+    top:-4px;
+    margin:0 auto;
+}
+.search_box .seek{padding:0 10px}
+.search_box .seek1{
+    padding:16px 16px;
+    border-bottom: 1px solid #f5f5f5;
+    background:#fff;
+}
+.search_box .seek1 a{
+    float:right;
+    height:36px;
+    line-height:36px;
+    font-size:16px;color:#f97432;
+}
+.search_box .enter{
+    position:relative;
+    margin:8px 0 10px;
+    padding-left:104px;
+    background-color:#f2f2f2;
+    overflow:hidden;
+        -webkit-border-radius:18px;
+        -moz-border-radius:18px;
+        -o-border-radius:18px;
+        -ms-border-radius:18px;
+        border-radius:18px;
+    }
+.search_box .enter1{
+    width:80%;margin:0;
+    padding-left:14px;
+    background:rgb(249, 249, 249);
+    border:none;
+}
+.search_box .enter1 a{float:right}
+.search_box .adr{
+    position:absolute;
+    width:104px;
+    height:34px;
+    top:0;left:0;
+}
+.search_box .adr span{float:left;height:34px;line-height:34px;color:#696969}
+.search_box .adr .txt{max-width:48px}
+.search_box .adr_icon{
+    width:26px;background:url(img/mobile/icons_4.png) -1px -60px no-repeat;
+    -webkit-background-size:135px auto;
+    -moz-background-size:135px auto;
+    -o-background-size:135px auto;
+    -ms-background-size:135px auto;
+    background-size:135px auto;
+}
