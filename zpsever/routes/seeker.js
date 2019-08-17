@@ -27,11 +27,11 @@ router.post('/reg',function(req,res){
 		//return 阻止往后执行
 		return;
 	  }
-	  if(!obj.phone){
-	  res.send({code:404,msg:'phone require'});
-		//return 阻止往后执行
-		return;
-	  }
+//	  if(!obj.phone){
+//	  res.send({code:404,msg:'phone require'});
+//		//return 阻止往后执行
+//		return;
+//	  }
 	  //执行SQL语句
 	  pool.query('INSERT INTO job_seeker SET ?',[obj],function(err,result){
 	    if(err) throw err;
@@ -109,7 +109,7 @@ router.get('/update',function(req,res){
     //console.log(key,obj[key]);
   }
   //4.3执行SQL语句
-  pool.query('UPDATE job_seeker SET email=?,phone=?,user_name=?,gender=? WHERE  job_seeker_id=?',[obj.email,obj.phone,obj.user_name,obj.gender,obj. job_seeker_id],function(err,result){
+  pool.query('UPDATE job_seeker SET email=?,user_name=? WHERE  job_seeker_id=?',[obj.email,obj.user_name,obj. job_seeker_id],function(err,result){
     if(err) throw err;
 	console.log(result);
 	//判断是否修改成功
@@ -139,7 +139,7 @@ router.get('/list',function(req,res){
     if(err) throw err;
 	res.send(result);
   });
-  res.send('用户列表');
+  //res.send('用户列表');
 });
 
 //6.删除用户
@@ -187,16 +187,7 @@ router.get('/checkemail',function(req,res){
 	}
   });
 });
-//8.检测手机
-router.get('/checkphone',function(req,res){
-  //8.1获取数据
-  var obj=req.query;
-  console.log(obj);
-  //8.2验证数据是否为空
-  if(!obj.phone){
-    res.send({});
-  }
-});
+
 
 
 //导出路由器
