@@ -157,32 +157,11 @@
     position:relative;
     color:#333;
     font-size:13px}
-/* .search_box .nav span:after{
-    
-    width:40px;
-    height:40px;
-    content:'';
-    top:-40px;
-    left:50%;
-    margin-left:-20px;
-    /* background:url("img/index/minggi/tub/附近 (1).png") -7px -50px no-repeat;  
-    background-size:342px auto;
-} */
 .search_box .nav span .imgs{
     position:absolute;
     margin-top: -40px;
     margin-left: -45px;
 }
-/* .search_box .nav a:nth-child(2) span .imgs:after{ margin-top: -40px;
-    margin-left: -50px;} */
-/* .search_box .nav a:nth-child(2) span:after{background-position:-44px -50px}
-.search_box .nav a:nth-child(3) span:after{background-position:-80px -50px}
-.search_box .nav a:nth-child(4) span:after{background-position:-118px -50px}
-.search_box .nav a:nth-child(5) span:after{background-position:-160px -50px} */
-/* .search_box .nav .msearch:after{
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/nicon.png) -280px -5px no-repeat;
-    background-size:382px auto;
-} */
 .search_box .nav a:nth-child(2) .msearch:after{background-position:-280px -5px}
 /*--搜索框END--*/
 
@@ -298,14 +277,6 @@ footer.ft1{bottom:102px}
 .hot1 li:nth-child(1):before,.hot1 li:nth-child(2):before,
 .hot1 li:nth-child(3):before,.hot1 li:nth-child(4):before{display:none}
 .hot1 li a.mk{position: relative;padding-top:25px;}
-/* .hot1 li a.mk:after{
-    position:absolute;
-    width:30px;
-    height:20px;
-    content:"";top:14px;
-    left:50%;margin-left:-15px;
-    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icons_4.png) -8px -10px no-repeat; 
-    background-size:135px} */
     .hot1 li a.mk .imgs{
       position:absolute;
       margin-top: -15px;
