@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk">
+    <title>51Job帐号授权注册</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="all">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Pragma" content="no-cache">
+    <script language="javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/pointtrack.js"></script>
+     <link href="css/oauth_mdd.css" rel="stylesheet">
+</head>
+<body>
+<div class="head1">
+	<a href="javascript:history.back();"></a>
+    注册
+</div>
+<div class="l_r">
+	<a href="javascript:void(0);" class="logo">
+		<img src="img/index/minggi/log/logo.png" width="300" alt=""/>
+	</a>
+</div>
+<div class="lmain">
+	<form action="" method="post" autocomplete='off' name="signup" id="signup" onsubmit="return checkRegisterByPhone();">
+		<input type="hidden" name="client_id" id="client_id" value="000003">
+		<input type="hidden" name="redirect_uri" id="redirect_uri" value="https%3A%2F%2Fm.51mdd.com%2Fmy%2Fcallback.php">
+		<input type="hidden" name="action" id="action" value="save">
+		<input type="hidden" name="from_domain" id="from_domain" value="51mdd_m">
+		<input type="hidden" name="display" id="display" value="h5">
+		<input type="hidden" name="state" id="state" value="000000">
+		<input type="hidden" name="selectednatonid" id="selectednatonid" value="CN">
+		<input type="hidden" id="scode" name='scode' value="">
+		<div class="enter" id="reg">
+			<div class="e e1">
+				<input type="text" class="tel" maxlength="11" name="phone" id="runame" placeholder="" value="" onblur="out_runame_msg()" onfocus="runame_msg()">
+				<input type="hidden" name="phonestatus" id="phonestatus" value="1">
+				<span id="rn_msg"></span>
+				<p class="please" id="phone_err" style="display:none"></p>
+				<i class="clear"></i>
+			</div>
+			<div class="e e2">
+				<input type="password" class="password" name="password" id="rupwd" maxlength="12" placeholder="" value="" onblur="out_rupwd_msg()" onfocus="rupwd_msg()">
+				<span id="rp_msg"></span>
+				<i class="rp_msg"></i>
+			</div>
+            <div class="lr_e id_auth" id="verify_btn" style="display: none;">
+            </div>
+            <div class="lr_e id_success" style="display: none;">
+
+            </div>
+			<div class="e e4">
+				<input type="text" class="yzm" oninput="if(value.length>6)value=value.slice(0,6)" id="phonecode" name="phonecode" placeholder="请输入短信验证码">
+				<span class="btn btn_m" id="btn7" onclick="sendPhoneCode()">发送验证码</span>
+				<p class="please" id="phonecode_err" style="display:none">短信验证码错误或已过期</p>
+				<i class="clear dx"></i>
+				<p>
+					验证码：
+					<input type="text" id="text" placeholder="验证码为4位" onfocus="into()" onblur="outto()">
+					<br />
+					<span id="discode"></span>
+					<button onclick="change()">换一换</button>
+					<span id="text_msg"></span>
+				</p>
+			</div>
+		</div>
+		<div class="sure">
+            <!-- <p class="stip">若已有51Job帐号，可直接登录</p> -->
+			<input type="checkbox" name="isread" id="isread" checked="true" style="display: none;">
+            <button type="submit" class="lgbtn" id="jreg" onclick="user_reg()">注册</button>
+			<div class="lp">
+				<a href="get_login-1.html" class="df">已有帐号，直接登录</a>
+			</div>
+		</div>
+	</form>
+	<div class="fb">
+		登录即代表阅读并同意
+	</div>
+</div>
+<!--引用js-->
+<script src="js/common.js"></script>
+<script src="js/oauth_mdd.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>
+</body>
+</html>

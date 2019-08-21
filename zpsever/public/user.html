@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<title>51Job帐号授权注册</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<meta name="robots" content="all">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">
+		<script language="javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/pointtrack.js"></script>
+		 <link href="css/oauth_mdd.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+		<div id="banner">
+				<div id="login">
+					<h1>用户登陆</h1>
+					<p>
+						用户名：
+						<input type="text" id="uname" placeholder="用户名" onblur="out_luname_msg()">
+						<br>
+						<span id="ln_msg"></span>
+					</p>
+					<p>
+						密&nbsp;&nbsp;&nbsp;码：
+						<input type="password" id="upwd" placeholder="密码" onblur="out_lupwd_msg()">
+						<br />
+						<span id="lp_msg"></span>
+					</p>
+					<p>
+	
+						<button onclick="user_login()" id="tlogin">登 录</button>
+						<br />
+						<span id="login_msg"></span>
+						<br />
+					</p>
+					<p>
+						<button onclick="loginreg()" id="loginreg">注册</button>
+					</p>
+					<p>
+						<a href="javascript:;">忘记密码？</a>
+					</p>
+				</div>
+				<div id="reg">
+					<h1>用户注册</h1>
+					<p>
+						用户名：
+						<input type="text" id="runame" placeholder="用户名3~8位" onfocus="runame_msg()" onblur="out_runame_msg()" />
+						<br />
+						<span id="rn_msg"></span>
+					</p>
+					<p>
+						密&nbsp;&nbsp;&nbsp;码：
+						<input type="password" id="rupwd" placeholder="密码6~12位" onfocus="rupwd_msg()" onblur="out_rupwd_msg()">
+						<br />
+						<span id="rp_msg"></span>
+					</p>
+					<p>
+						验证码：
+						<input type="text" id="text" placeholder="验证码为4位" onfocus="into()" onblur="outto()">
+						<br />
+						<span id="discode"></span>
+						<button onclick="change()">换一换</button>
+						<span id="text_msg"></span>
+					</p>
+					<p>
+						<button onclick="user_reg()" id="jreg">注 册</button>
+					</p>
+					<p>
+						<button onclick="reglogin()" id="reglogin">登录</button>
+					</p>
+				</div>
+			</div>
+    <script src="js/user.js"></script>
+</body>
+</html>

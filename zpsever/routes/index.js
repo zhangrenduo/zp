@@ -21,7 +21,7 @@ const pool=require("../pool");
 });*/
 
 router.get("/",(req,res)=>{
-    var lid=req.query.lid;
+    var index_ptitle_id=req.query.index_ptitle_id;
     var output={
       title:[],
       ptitle:[],
@@ -34,7 +34,7 @@ router.get("/",(req,res)=>{
         output.product=result[0];
         console.log(output);
         var index_ptitle_id=output.product["index_title_id"];
-        var sql2=`select spec,lid from index_ptitle where index_title_id=?`;
+        var sql2=`select ptitle,index_title_id from index_ptitle where index_title_id=?`;
         pool.query(sql2,[index_ptitle_id],(err,result)=>{
           if(err) console.log(err);
           output.specs=result;

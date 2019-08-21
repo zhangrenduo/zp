@@ -9,8 +9,7 @@
 
 .myFm .fetitle{position:relative;height:38px;line-height:38px;text-indent:23px;border-bottom:1px solid #d4d4d4}
 
-.myFm .fetitle:before{position:absolute;width:3px;height:14px;content:' ';left:15px;top:12px;background-color:#f66f17;
-	-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;-ms-border-radius:20px;border-radius:20px}
+.myFm .fetitle:before{position:absolute;width:3px;height:14px;content:' ';left:15px;top:12px;background-color:#f66f17;border-radius:20px} 
 
 .fbut{display:block;width:100%;height:40px;line-height:40px;font-size:15px;color:#f66f17;background-color:#fff}
 
@@ -19,19 +18,14 @@
 .skip{text-align:center}
 .skip a{color:#55bbf1}
 
-.elswitch{position:absolute;width:46px;height:26px;top:50%;right:15px;margin-top:-15px;background-color:#fff;border:2px solid #e1e1e1;
-	-webkit-border-radius:20px;-moz-border-radius:20px;-o-border-radius:20px;-ms-border-radius:20px;border-radius:20px;
-	-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;-ms-transition: all .3s ease;transition: all .3s ease}
+.elswitch{position:absolute;width:46px;height:26px;top:50%;right:15px;margin-top:-15px;background-color:#fff;border:2px solid #e1e1e1;border-radius:20px;transition: all .3s ease}
 .elswitch:before{position:absolute;width:26px;height:26px;content:' ';top:0;left:0;background-color:#fff;
-	-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;border-radius:50%;
-	-webkit-box-shadow:0 0 2px 1px #ccc;-moz-box-shadow:0 0 2px 1px #ccc;-o-box-shadow:0 0 2px 1px #ccc;-ms-box-shadow:0 0 2px 1px #ccc;box-shadow:0 0 2px 1px #ccc;
-	-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;-ms-transition: all .3s ease;transition: all .3s ease}
+	transition: all .3s ease}
 .elswitch.on{background-color:#f66f17;border-color:#f66f17}
 .elswitch.on:before{left:20px}
 
 .myFm .link{color:#333}
-.myFm .link:before,.myFm .select:after{position:absolute;width:8px;height:13px;content:' ';right:15px;top:50%;margin-top:-6px;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 0 -20px;
-	-webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
+.myFm .link:before,.myFm .select:after{position:absolute;width:8px;height:13px;content:' ';right:15px;top:50%;margin-top:-6px;}
 
 .myFm .linetitle,.myFm .mlinetitle,.myFm .tlinetitle{display:block;margin:0 34px 0 10px}
 .myFm .mlinetitle{margin-right:120px}
@@ -49,18 +43,14 @@
 
 .note_h{line-height:30px;padding:5px 10px 0 16px;background-color:#fff;border-bottom:1px solid #d4d4d4}
 .note_h span{position:relative;color:#333;padding-left:6px}
-.note_h span:before{position:absolute;width:2px;height:14px;content:'\00a0';top:3px;left:0;background-color:#f66f17;
-	-webkit-border-radius:2px;-moz-border-radius:2px;-o-border-radius:2px;border-radius:2px}
+.note_h span:before{position:absolute;width:2px;height:14px;content:'\00a0';top:3px;left:0;background-color:#f66f17;border-radius:2px}
 .note_h a{float:right;color:#f66f17;margin-right:10px}
 
 .Fm .ms{position:absolute;width:100%;left:0;top:0;text-indent:120px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
-.Fm .elink:after,.Fm .selt:after,.Fm .default_selt:after{position:absolute;width:8px;height:13px;content:' ';top:50%;right:-18px;margin-top:-6px;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 0px -20px;
-	-webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
-.Fm .selt:after,.Fm .default_selt:after{margin-top:-1px;
-	-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
+.Fm .elink:after,.Fm .selt:after,.Fm .default_selt:after{position:absolute;width:8px;height:13px;content:' ';top:50%;right:-18px;margin-top:-6px;}
+.Fm .selt:after,.Fm .default_selt:after{margin-top:-1px;}
 
-.Fm .rdo:before{position:absolute;width:20px;height:20px;top:50%;left:0;margin-top:-9px;content:' ';background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_mi.png) no-repeat -42px 0;
-	-webkit-background-size:auto 100px;-moz-background-size:auto 100px;-ms-background-size:auto 100px;background-size:auto 100px}
+.Fm .rdo:before{position:absolute;width:20px;height:20px;top:50%;left:0;margin-top:-9px;content:' ';}
 .Fm .rdo.on:before{background-position:-21px 0}
 .Fm .rdo.default_rdo:before{background-position:0 0}
 
@@ -70,16 +60,14 @@
 .Fm .e:last-child:after{display:none}
 .Fm .e .error{margin-left:-64px}
 .Fm .e2 .txt{padding-right:35px}
-.Fm .e .gec{position:absolute;width:20px;height:20px;top:11px;right:11px;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_p.png) 3px -78px;
-	-webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
+.Fm .e .gec{position:absolute;width:20px;height:20px;top:11px;right:11px;}
 .Fm label{position:absolute;height:43px;top:0;left:15px;padding-right:10px}
 .Fm label em{position:absolute;color:#f43530;top:2px;left:-8px}
 .Fm .txt,.Fm .seltbox,.Fm .selt,.Fm .rdob,.Fm .elink,.Fm .default_val,.Fm .default_selt{position:relative;z-index:1}
 .Fm .txt,.Fm .elink,.Fm .default_val{float:left;width:100%;height:22px;line-height:22px;text-align:right;margin-top:11px;border:0 none}
 .Fm .txt,.Fm .default_val{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
 .Fm .default_val,.Fm .default_selt{color:#999}
-.Fm .sltxt{float:right;width:93px;height:30px;line-height:30px;text-align:center;padding:0 10px;background-color:#f0f0ef;border:0 none;
-	-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px}
+.Fm .sltxt{float:right;width:93px;height:30px;line-height:30px;text-align:center;padding:0 10px;background-color:#f0f0ef;border:0 none;border-radius:5px}
 .Fm .custom{position:relative;min-height:30px;clear:both;right:-18px;margin-left:-90px;padding-top:10px}
 .Fm .custom:before{position:absolute;width:25px;height:2px;content:' ';top:24px;right:113px;background-color:#6f6f6f}
 .Fm .custom .sltxt:first-child{margin-left:65px}
@@ -96,19 +84,15 @@
 .Fm .rdob .rdo{position:relative;float:right;margin-left:15px;padding-left:30px}
 .Fm .elink{text-align:right}
 .Fm .error{height:32px;line-height:28px;font-size:12px;color:#f43530;text-align:right;clear:both}
-.Fm .error:before{position:relative;display:inline-block;width:12px;height:12px;content:' ';top:1px;margin-right:5px;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat -20px -80px;
-	-webkit-background-size:40px auto;-moz-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
+.Fm .error:before{position:relative;display:inline-block;width:12px;height:12px;content:' ';top:1px;margin-right:5px;}
 .Fm .cm{position:absolute;right:35px;z-index:2}
-.Fm .btn{position:absolute;height:20px;line-height:20px;font-size:12px;color:#f66f17;text-align:center;top:11px;right:15px;padding:0 10px;background-color:#FFF;border:1px solid #f66f17;
-	-webkit-border-radius:5px;-moz-border-radius:5px;-o-border-radius:5px;border-radius:5px;z-index:2}
+.Fm .btn{position:absolute;height:20px;line-height:20px;font-size:12px;color:#f66f17;text-align:center;top:11px;right:15px;padding:0 10px;background-color:#FFF;border:1px solid #f66f17;border-radius:5px;z-index:2}
 .Fm .switch{position:relative;float:right;width:20px;height:30px;top:7px;right:-19px;margin-left:14px;margin-right:14px}
-.Fm .switch:before,.Fm .switch:after{position:absolute;width:26px;height:26px;content:"\00a0";background-color:#fff;border:2px solid #e3e3e3;
-	-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%}
+.Fm .switch:before,.Fm .switch:after{position:absolute;width:26px;height:26px;content:"\00a0";background-color:#fff;border:2px solid #e3e3e3;border-radius:50%}
 .Fm .switch:before{top:0;left:-15px}
 .Fm .switch:after{top:0;right:-15px}
 .Fm .switch_center{position:relative;width:20px;height:26px;background-color:#fff;border-top:2px solid #e3e3e3;border-bottom:2px solid #e3e3e3;z-index:1}
-.Fm .switch_center:after{position:absolute;width:26px;height:26px;content:"\00a0";top:-1px;left:-14px;background-color:#fff;border:1px solid #e3e3e3;z-index:1;
-	-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%}
+.Fm .switch_center:after{position:absolute;width:26px;height:26px;content:"\00a0";top:-1px;left:-14px;background-color:#fff;border:1px solid #e3e3e3;z-index:1;border-radius:50%}
 .Fm .switch.on:before,.Fm .switch.on:after,.Fm .switch.on .switch_center{background-color:#f66f17;border-color:#f66f17}
 .Fm .switch.on .switch_center:after{left:6px;border-color:#fff}
 .Fm .e.long{padding-left:106px}
@@ -128,8 +112,7 @@
 
 .Fm .result{overflow:hidden;padding:0 16px 10px;background-color:#fff}
 .Fm .result .bb.at{position:relative;float:left;max-width:100%;line-height:20px;margin:10px 10px 0 0;padding:0 20px 0 5px;border:1px solid #f66f17}
-.Fm .result .bb.at em{position:absolute;width:20px;height:20px;top:0;right:0;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat -20px -95px;
-	-webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
+.Fm .result .bb.at em{position:absolute;width:20px;height:20px;top:0;right:0;}
 
 .Fm .cus{position:relative;min-height:36px;clear:both;margin-top:-1px}
 .Fm .cus:before{position:absolute;width:25px;height:2px;content:' ';top:15px;right:150px;background-color:#ddd}
@@ -146,8 +129,7 @@
 .popFm .ls li{position:relative;height:38px;line-height:38px;color:#9b9b9b;text-indent:1em;margin-left:15px;border-bottom:1px solid #d4d4d4}
 .popFm .ls li:last-child{border-bottom:0 none}
 .popFm .ls li.on{color:#f66f17}
-.popFm .ls li.on:after{position:absolute;width:20px;height:20px;content:' ';top:50%;right:16px;margin-top:-10px;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat -16px -58px;
-	--webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
+ .popFm .ls li.on:after{position:absolute;width:20px;height:20px;content:' ';top:50%;right:16px;margin-top:-10px;} 
 .popFm .ls .title{color:#333;text-indent:0}
 .popFm .ls span{display:block;padding-right:15px}
 .popFm .ls .on span{padding-right:40px}

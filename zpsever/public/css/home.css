@@ -17,6 +17,7 @@
     float:right;
     width:92px;
     margin-right: 10px;
+    margin-top: 18px;
 }
 .newheader .op a:before{
     position: absolute;
@@ -218,7 +219,7 @@ footer.ft1{bottom:102px}
     height:16px;
     line-height:16px;
     font-size:15px;
-    color:#757ee2;}
+    color:#FF5722;}
 .speed .more{
     position:absolute;
     width:45px;
@@ -235,7 +236,7 @@ footer.ft1{bottom:102px}
     height:32px;
     content:'\00a0';
     top:0;right:0;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) -134px -8px no-repeat;
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) -134px -8px no-repeat; */
     background-size:342px auto}
 
 .hot{padding:10px 18px 0}
@@ -309,12 +310,13 @@ footer.ft1{bottom:102px}
     height:40px;
     content:'\00a0';
     top:0px;;right:0px;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/mq_icon.png) -20px -25px no-repeat;
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/mq_icon.png) -20px -25px no-repeat;
     -webkit-background-size:278px auto;
     -moz-background-size:278px auto;
     -o-background-size:278px auto;
-    -ms-background-size:278px auto;
-    background-size:278px auto}
+    -ms-background-size:278px auto; 
+    background-size:278px auto*/
+}
 .fc a:last-child:after{display:none}
 .fc a img{position:absolute;left:10px;top:14px}
 .fc a .limg{left:16px;top:16px}
@@ -351,8 +353,9 @@ footer.ft1{bottom:102px}
     content:"";width:15px;
     height:25px;right:0px;
     top:-3px;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/nicon.png) -231px -145px no-repeat;
-    background-size: 382px auto}
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/nicon.png) -231px -145px no-repeat;
+    background-size: 382px auto */
+}
 /*--名企专区--*/
 
 /*--薪资高--*/
@@ -398,12 +401,12 @@ footer.ft1{bottom:102px}
     width:50px;height:50px;
     content:'';
     top:0;right:0px;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) 0 0 no-repeat;
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) 0 0 no-repeat;
     -webkit-background-size:342px auto;
     -moz-background-size:342px auto;
     -o-background-size:342px auto;
     -ms-background-size:342px auto;
-    background-size:342px auto；
+    background-size:342px auto； */
 }
 .special .p_job span:after{background-position:0px -100px}
 .special .n_exp span:after{background-position:-59px -100px}
@@ -539,8 +542,8 @@ footer.ft1{bottom:102px}
     width:20px;
     height:20px;
     content:'\00a0';top:10px;left:0;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_histroy.png) center no-repeat;
-    background-size:20px auto;
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_histroy.png) center no-repeat;
+    background-size:20px auto; */
 }
 .search_con .history{padding:0 16px}
 .search_con .history .e{height:40px}
@@ -556,9 +559,10 @@ footer.ft1{bottom:102px}
     border-radius:26px;
 }
 .search_con .hot{padding:0 16px}
-.search_con .hot .title:after{
+/* .search_con .hot .title:after{
     background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_hot.png) center no-repeat;
-    background-size:20px auto}
+    background-size:20px auto
+} */
 .search_con .hot .e{color:#333;margin:0 10px 16px 0;border-color:#f66f17}
 .search_con .hot .box{overflow:hidden}
 .search_con .lst .e{
@@ -581,8 +585,10 @@ footer.ft1{bottom:102px}
 .search_con .lst .e1:before{
     position:absolute;
     left:12px;
-    height:40px;width:20px;content:'';background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) -170px -6px no-repeat;
-    background-size: 342px auto;}
+    height:40px;width:20px;content:'';
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon1.png?20190321) -170px -6px no-repeat;
+    background-size: 342px auto; */
+}
 
 .search_con .lst .e:last-child:after{display:none}
 .search_con .lst .e1:after{display:none}
@@ -626,12 +632,8 @@ footer.ft1{bottom:102px}
 .con1 .a_job{max-height:83%;overflow:scroll}
 .con1 .a_job .title:after{
     height:22px;width:22px;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/nicon.png) -206px -149px no-repeat;
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/nicon.png) -206px -149px no-repeat; */
 }
 .con1 .a_job .h_job:after{background-position:-171px -149px}
 .con1 .a_job .h_comp:after{background-position:-134px -149px}
 /*--输入浮层END--*/
-
-/* 新浮层 */
-.floor{position:absolute;top:0;width:100%;z-index:10}
-

@@ -1,7 +1,7 @@
 .cover{padding-top:40px;background-color:#f6f6f5}
-.cover .ptit .e:before,.cover .ncity:before{
+/* .cover .ptit .e:before,.cover .ncity:before{
 	background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_city.png) no-repeat;
-}
+} */
 .cover .t_phead i:first-child:after,
 	.cover .ptit .e:before,.cover .ptit .e:after,
 	.cover .ncity:before,
@@ -30,7 +30,7 @@
 	height:23px;
 	top:8px;
 	left: 14px;
-    background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 0 -55px;
+    /* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 0 -55px; */
 }
 .cover .ptit{background-color:#fff}
 .cover .ptit .e{
@@ -117,7 +117,7 @@
 	right:15px;
 	top:50%;
 	margin-top:-7px;
-	background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 4px -20px;
+	/* background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 4px -20px; */
     }
 .cover .plist .down:before{background-position:-20px -20px}
 .cover .plist .down:after{left:0}
