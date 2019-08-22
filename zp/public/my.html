@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="telephone=no" name="format-detection">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="keyword" content="" />
+<title></title>
+<meta id="share" share_url="" sharetitle="" sharetxt="" />
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pop.css">
+<link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/registration.css">
+<link rel="stylesheet" href="css/city.css">
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/jweixin-1.3.2.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+	<div class="head" id="tophead"><a href="javascript:history.go(-1);" class=""></a>我的
+		<a class="yd yd1" href="my.html"></a></div>
+<section class="myFm">
+	<div class="fe">
+		<div class="e">
+			<p class="tlinetitle at">phone_13577464047_201908094418</p>
+		</div>
+		<div class="e">
+			<span class="mlinetitle c_gray at">正在求职</span>
+			<span class = "elswitch" id = "workstatus"></span>		</div>
+	</div>
+	<div class="fe">
+		<a class="e link" href="myapply.html">
+			<span class="mlinetitle at">职位申请记录</span>
+			<span class="minfo"><i class="c_light">1</i>条</span>
+		</a>
+        <a tracetag="MIDUODUO_MY_WHOSAWRSM" class="e link seeme" href="javascript:void(0);">
+            <span class="mlinetitle at">谁看过我的简历</span>
+        </a>
+		
+		<a class="e link" href="#">
+			<span class="mlinetitle at">职位收藏夹</span>
+			<span class="minfo"><i class="c_light">0</i>条</span>
+		</a>
+	</div>
+	<div class="fe">
+		<a class="e link" href="#">
+			<span class="linetitle at">意见反馈</span>
+		</a>
+		<!-- <a class="e link" href="javascript:void(0);" id="changeLinkInfo">
+			<span class="linetitle at">修改联系方式</span>
+		</a> -->
+		<a class="e link" href="#">
+			<span class="mlinetitle at">账号管理</span>
+			<span class="minfo"><i class="c_light"></span>
+		</a>
+	</div>
+	
+	<button class="fbut">退出登录</button>
+	<div class="g80"></div>
+</section>
+<div class="up" style="display:none" id="email">
+	<div class="mtp">
+		<a class="goback at" href="javascript:void(0);">返回</a>
+		<strong class="at">注册资料修改</strong>
+	</div>
+	<div class="main">
+		<p class="tle mk1">
+			<span class="bb email1 switchPage">邮箱</span>
+			<span class="bb phone1 switchPage">手机号</span>
+			<span class="bb pwd1 switchPage">密码</span>
+		</p>
+		<div class="box">
+			<section class="p">
+				<label class="g_label">邮箱</label>
+				<p class="ipt">
+					<input type="email" class="txt disabled old_email"  value="1799405092@qq.com" disabled="disabled" />
+				</p>
+			</section>
+			<section class="p">
+				<label class="g_label">新邮箱</label>
+				<p class="ipt">
+					<input type="email" class="txt new_email" placeholder="请输入新的邮箱" />
+				</p>
+			</section>
+			<section class="p">
+				<label class="g_label">密码</label>
+				<p class="ipt">
+					<input type="password" class="txt old_pwd"  placeholder="请输入密码" />
+				</p>
+			</section>
+			<p class="pt">温馨提示：简历与登录邮箱将同步修改哦！</p>
+			<center class="cop email1">
+				<input type="submit" class="but b_big b_light" value="确定"/>
+			</center>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="up" style="display:none" id='phone'>
+	<div class="mtp">
+		<a class="goback at" href="javascript:void(0);">返回</a>
+		<strong class="at">注册资料修改</strong>
+	</div>
+	<input type='hidden' id='old_phone' value="13577464047">
+	<input type='hidden' id='mp_verifystatus' value="3">
+	<div class="main" >
+		<p class="tle mk2">
+			<span class="bb email1 switchPage">邮箱</span>
+			<span class="bb phone1 switchPage">手机号</span>
+			<span class="bb pwd1 switchPage">密码</span>
+		</p>
+		<div class="box" >
+			<section class="p phone">
+				<label class="g_label">新手机</label>
+				<div class="inter">
+					<input type="text" class="userNum" id="viewNum" value="+86" readonly="readonly">
+				</div>
+				<p class="ipt">
+					<input type="text" class="txt new_phone" maxlength="15" title="请输入新手机号" value="13577464047">
+				</p>
+			</section>
+			<section class="p p_bn">
+				<label class="g_label">验证码</label>
+				<p class="ipt i4">
+					<input type="text" class="txt" id="smscode" placeholder="请输入验证码">
+				</p>
+				<p>
+								<span class="gcode" id="get_verify_code">
+						获取验证码
+					</span>
+				</p>
+			</section>
+			<center class="cop phone1">
+				<input class="but b_light b_big" type="submit" value="保存">
+			</center>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="up" style="display:none" id="pwd">
+	<div class="mtp">
+		<a class="goback at" href="javascript:void(0);">返回</a>
+		<strong class="at">注册资料修改</strong>
+	</div>
+	<div class="main">
+		<p class="tle mk3">
+			<span class="bb email1 switchPage">邮箱</span>
+			<span class="bb phone1 switchPage">手机号</span>
+			<span class="bb pwd1 switchPage">密码</span>
+		</p>
+		<div class="box">
+			<section class="p">
+				<label class="g_label">密码</label>
+				<p class="ipt">
+					<input type="password" class="txt" id="old_pwd" placeholder="请输入旧密码" />
+				</p>
+			</section>
+			<section class="p">
+				<label class="g_label">新密码</label>
+				<p class="ipt">
+					<input type="password" class="txt" id="new_pwd" placeholder="请输入密码，6-16位字母加数字" />
+				</p>
+			</section>
+			<section class="p">
+				<label class="g_label">确认密码</label>
+				<p class="ipt">
+					<input type="password" class="txt" id="new_pwd_repeat" placeholder="请再次输入新密码" />
+				</p>
+			</section>
+			<center class="cop pwd1">
+				<input type="submit" class="but b_light b_big" value="确定"/>
+			</center>
+		</div>
+	</div>
+</div>		
+<section class="btmtab" id="mddbtmtab">
+    <a class="i1" href="index.html">首页</a>
+    <a class="i2" href="resume.html">简历</a>
+    <a class="i3" href="myapply.html">已申请</a>
+    <a class="i4 on" href="my.html">我的</a>
+    <a class="i5" href="javascript:bottomOpenApp();">APP</a>
+</section>	
+<div id="shadow" style="display:none;"></div>
+    <script type="text/javascript" src="js/fun.js"></script>
+	<script type="text/javascript" src="js/datadict.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>	
+	
+	
+</body>
+<script src="js/trackData.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    var time        = '1566207825975';
+    var pagecode    = '30299';
+    var cusParam    = "116156432051mdd_m51mdd_h50m.51mdd.com";
+    var param   = 'VerType=3&webId=2&logTime=' + time + '&ip=' + $_CONFIG['ip'] + '&guid=' + $_CONFIG['guid'] + '&domain=m.51mdd.com&pageCode=' + pagecode + '&cusParam=' + cusParam;
+    _tkd.push(['_trackPageView',param]);
+</script>
+</html>
