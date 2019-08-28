@@ -1,4 +1,5 @@
 (function() {
+	//放入cdn上，目前51job用户
     String.prototype.trim=function(){
         return this.replace(/(^\s*)|(\s*$)/g, "");
     }
@@ -50,6 +51,7 @@
          }
     }
     
+    //send get request
     function send(logType, params) {
         var win = window;
         var n = '_job_img_' + (+new Date()) + '.r' + Math.floor(Math.random() * 1000),

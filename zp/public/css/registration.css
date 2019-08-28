@@ -4,16 +4,12 @@ input[type="button"],input[type="submit"]{-webkit-border-radius:5px;-moz-border-
 .main{padding-bottom:30px;background-color:#fff}
 .mtp{position:relative;height:40px;line-height:40px;color:#666;padding:0 90px;background-color:#fba55f}
 .mtp .goback{position:absolute;max-width:70px;height:40px;color:#FFF;top:0;left:10px;padding-left:22px}
-.mtp .goback:after{position:absolute;width:13px;height:23px;content:'\00a0';top:8px;left:0;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) no-repeat 0 -54px;
-    -webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
+.mtp .goback:after{position:absolute;width:13px;height:23px;content:'\00a0';top:8px;left:0;background:url(../img/index/minggi/log/icon_a.png) no-repeat 0 -54px;background-size:40px auto}
 .mtp strong{display:block;font-size:16px;font-weight:normal;text-align:center;color:#333}
 .mtp .logo{position:absolute;left:10px;top:5px}
 .mtp .hm{position:absolute;width:55px;height:40px;color:#FFF;text-align:center;right:0;top:0}
 .mtp .title{display:block;font-size:16px;text-align:center}
-
-
 .tle{position:relative;height:35px;line-height:35px;text-align:center;border-bottom:1px solid #e1e1e1}
-
 .tle span{float:left;width:50%;color:#777;background-color:#FFF}
 .tle span{width:33.3%;border-right:1px solid #e1e1e1}
 .tle span:last-child{border-right:none}
@@ -38,7 +34,7 @@ input[type="button"],input[type="submit"]{-webkit-border-radius:5px;-moz-border-
 .inter{position:absolute;width:65px;top:0;left:80px}
 .inter select{position:absolute;width:65px;height:47px;top:0;left:0;
     -webkit-opacity:0;-moz-opacity:0;-o-opacity:0;opacity:0}
-.inter .userNum{width:100%;height:24px;line-height:24px;margin-top:12px;color:#000;background:url(//img01.51jobcdn.com/im/mobile/miduoduo/icon_a.png) 43px -33px no-repeat;border:0 none;border-right:1px solid #c1c1c1;
+.inter .userNum{width:100%;height:24px;line-height:24px;margin-top:12px;color:#000;background:url(../img/index/minggi/log/icon_a.png) 43px -33px no-repeat;border:0 none;border-right:1px solid #c1c1c1;
     -webkit-background-size:40px auto;-moz-background-size:40px auto;-o-background-size:40px auto;-ms-background-size:40px auto;background-size:40px auto}
 .gcode{position:absolute;width:78px;height:30px;line-height:30px;font-size:12px;color:#fff;text-align:center;right:16px;top:6px;background-color:#f66f17;
     -webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px}

@@ -3,10 +3,10 @@ if ("undefined" == typeof trackPoints)
     var trackPoints = {};
 }
 
-/*window.onload = function (){
+window.onload = function (){
     var js = document.createElement('script');
     js.setAttribute('type', 'text/javascript');
-    js.setAttribute('src',"https://js.51jobcdn.com/in/js/2016/trace/trackData.js?20180206");
+    js.setAttribute('src',"js/trackData.js");
     document.getElementsByTagName('head')[0].appendChild(js);
     $.each(trackPoints, function(i, n)
     {
@@ -36,8 +36,8 @@ if ("undefined" == typeof trackPoints)
             webId: "2",
         },
         dealParamsBeforeEvent: function(params){
-            //params['logTime'] = new Date().getTime() + d_system_client_time;
-            //params['ip'] = trackConfig.ip;
+            params['logTime'] = new Date().getTime() + d_system_client_time;
+            params['ip'] = trackConfig.ip;
             params['guid'] = trackConfig.guid;
             params['domain'] = trackConfig.domain;
             params['pageCode'] = $("#pageCode").length == 0 ? '19999' : $("#pageCode").val();
@@ -46,10 +46,10 @@ if ("undefined" == typeof trackPoints)
         }
     }
     setTimeout(function(){
-       // n = initTrackParams(accessLogParam);
-        //accessLogParam.requestFunc(n.rankParamsToStr(n.params, n.paramsRank));
+       n = initTrackParams(accessLogParam);
+        accessLogParam.requestFunc(n.rankParamsToStr(n.params, n.paramsRank));
     },2000);
-};*/
+};
 
 function manualTrack(trackName)
 {

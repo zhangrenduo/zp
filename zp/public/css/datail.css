@@ -97,7 +97,13 @@ nav{border-bottom:0 none}
 .aox .art_more p{height:31px;
     background:-webkit-linear-gradient(top, rgba(255,255,255,0), #fff);
     background:linear-gradient(to bottom,rgba(255,255,255,0), #fff)}
-.aox .art_more span{display:inline-block;width:20px;height:28px;}
+    .aox .art_more span {
+        display: inline-block;
+        width: 20px;
+        height: 28px;
+        background: url(../img/index/minggi/log/icons_4.png) -46px -65px no-repeat;
+        background-size: 135px auto;
+    }
 .aox .icin{position:relative;display:inline-block;padding-right:10px}
 .aox .icin:after{position:absolute;width:16px;height:15px;content:"\00a0";top:6px;right:-10px;
     background-size:40px auto}
@@ -105,15 +111,46 @@ nav{border-bottom:0 none}
 .wbox .img_code{text-align:center;padding:10px 0}
 .p_mind{position:relative;font-size:12px;color:#666;padding:10px 78px 10px 10px;background-color:#fff}
 .p_mind1{padding-right:90px;text-align:justify}
-.p_mind a{position:absolute;width:50px;height:24px;line-height:24px;font-size:12px;color:#f96f4f;text-align:center;top:50%;right:10px;margin-top:-13px;border:1px solid #f96f4f;}
-.p_mind .alert{width:70px;height:90px;margin-top:0;border:none;border-left:1px solid #e5e5e5;border-radius:0px}
+.p_mind a {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #f96f4f;
+    text-align: center;
+    top: 50%;
+    right: 10px;
+    margin-top: -13px;
+    border: 1px solid #f96f4f;
+    border-radius: 5px;
+}
+.p_mind .alert {
+    width: 70px;
+    height: 90px;
+    margin-top: 0;
+    border: none;
+    border-left: 1px solid #e5e5e5;
+    transform: translateY(-50%);
+    border-radius: 0px;
+}
 .no_re {height:60px;padding:160px 50px 30px;color:#999;font-size:13px;text-align:center;
     background-size:67px auto}
 .lop{position:fixed;width:100%;color:#fff;left:0;bottom:0;border-top:1px solid #ededed;z-index:8}
 .lop .l_re{padding:4px 15px 0 0px;background-color:#fff}
-.lop .l_re span{position:relative;display:inline-block;float: left;
+.lop .l_re span{position:relative;display:inline-block;
    width:20%;height:40px;font-size:12px;color:#666;text-align:center;margin:10px 0}
- .lop .l_re span:after{position:absolute;width:25px;height:25px;content:"\00a0";top:-5px;left:50%;margin-left:-13px;}
+   .lop .l_re span:after {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    content: "\00a0";
+    top: -5px;
+    left: 50%;
+    margin-left: -13px;
+    background: url(../img/index/minggi/log/icon_apply_4.png) -5px -6px no-repeat;
+    background-size: 70px auto;
+}
 .lop .l_re .j_phone:before{position:absolute;width:1px;height:20px;content:"";top:50%;left:0;margin-top:-10px;background:#d4d4d4}
 .lop .l_re .j_phone:after{background-position:-42px -6px}
 .lop .l_re .s2:after{background-position:center -62px}

@@ -296,8 +296,16 @@ html,body{height:100%}
 body{background-color:#fff}
 .head1{position:relative;height:44px;line-height:44px;text-align:center;background-color:#fff}
 .head1 a{position:absolute;width:44px;height:44px;top:0;left:0}
- .head1 a:after{content:'';position:absolute;width:20px;height:20px;left:50%;top:50%;margin:-10px 0 0 -10px;
-} 
+ .head1 a:after{content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    background: url(../img/index/minggi/log/icon_a.8a962b02.png) 6px -17px no-repeat;
+    background-size: 40px auto;
+    transform: rotate(-180deg);} 
 .l_r{padding:20px;text-align:center;color:#999;font-size:13px;margin-bottom:5px}
 .lmain{padding:0 26px}
 .lmain .e{position:relative;border-bottom:1px solid #ededed}
