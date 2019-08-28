@@ -181,7 +181,7 @@ jigsaw.init(document.getElementById('captcha'), function () {
   })
 //注册
 function runame_msg() {
-	rn_msg.innerHTML = "用户名3~8位";
+	rn_msg.innerHTML = "用户名2~8位";
 	rn_msg.style.color = "#999";
 }
 
@@ -229,7 +229,7 @@ var str = false;
 
 function out_runame_msg() {
 	if (runame.value) {
-		if (runame.value.length >= 3 && uname.value.length <= 8) {
+		if (runame.value.length >= 2 && uname.value.length <= 8) {
 			var $uname = runame.value;
 			var xhr = new XMLHttpRequest();
 			xhr.onreadystatechange = function () {

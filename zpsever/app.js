@@ -1,28 +1,94 @@
-//使用express构建web服务器 --11:25
-const express = require('express');
-const bodyParser = require('body-parser');
+//引入第三方模块
+const http = require("http");
+const express = require("express");
+const bodyParser = require("body-parser");
+const mysql = require("mysql");
+const cors = require("cors");
 const index=require("./routes/index");
-const cors=require("cors");
-/*引入路由模块*/
-
-
-var app = express();
-var server = app.listen(3000);
-app.use(cors({
-  origin:"http://127.0.0.1:5500"//不能用*
-}));//从此所有响应，自动带Access-Control-Allow-Origin:http://127.0.0.1:5500
-//万一客户端浏览器地址发生变化，只改这里origin一处即可！
-//使用body-parser中间件
-app.use(bodyParser.urlencoded({extended:false}));
-//托管静态资源到public目录下
-app.use(express.static('public'));
+const login=require("./routes/login");
+const register=require("./routes/register");
+//创建web服务器
+var server = express();
+//监听端口
+server.listen(3000);
+console.log("服务器已启动");
+//托管静态资源
+server.use(express.static("public"));
+//使用body-parser
+server.use(express.urlencoded({
+	extended: false
+}));
 /*使用路由器来管理路由*/
-app.use("/index",index);
+server.use("/index",index);
+server.use("/login",login);
+server.use("/register",register);
+//配置跨域模块
+server.use(cors({
+	orgin: [
+		"http:127.0.0.1:3000",
+		"http://localhost:3000"
+	],
+	credentials: true
+}));
+//创建连接池
+var pool = mysql.createPool({
+	host: "127.0.0.1",
+	port: "3306",
+	user: "root",
+	password: "",
+	database: "zp",
+	connectionLimit: 20
+});
 
 
+//用户登陆
+server.get("/user/login/:uname-:upwd", function (req, res) {
+	var $uname = req.params.uname;
+	var $upwd = req.params.upwd;
+	var sql = "SELECT * FROM zp_user WHERE uname=? AND upwd=?";
+	pool.query(sql, [$uname, $upwd], function (err, result) {
+		if (err) throw err;
+		if (result.length > 0) {
+			res.send("1");
+		} else {
+			res.send("0");
+		}
+	});
+});
 
-
-
-
-
-
+//用户注册
+//检测是否重名
+server.get('/double', (req, res) => {
+	var $uname = req.query.uname;
+	if (!$uname) {
+		res.send('未找到uname');
+		return;
+	}
+	var sql = 'select * from zp_user where uname=?';
+	pool.query(sql, [$uname], (err, result) => {
+		if (err) throw err;
+		if (result.length >= 1) {
+			res.send('1');
+		} else {
+			res.send('0');
+		}
+	})
+});
+server.post("/user/reg", (req, res) => {
+	var $uid = req.body.uid;
+	var $uname = req.body.uname;
+	var $upwd = req.body.upwd;
+	var $email = req.body.email;
+	var $phone = req.body.phone;
+	var $user_name = req.body.user_name;
+	var $gender = req.body.gender;
+	var sql = "insert into zp_user set uid=?,uname=?,upwd=?,email=?,phone=?,user_name=?,gender=?";
+	pool.query(sql, [$uid, $uname, $upwd, $email, $phone, $user_name, $gender], (err, result) => {
+		if (err) throw err;
+		if (result.affectedRows > 0) {
+			res.send("1");
+		} else {
+			res.send("2");
+		}
+	});
+});

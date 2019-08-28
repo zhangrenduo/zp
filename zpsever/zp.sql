@@ -28,6 +28,33 @@ INSERT INTO job_seeker VALUES
 INSERT INTO job_seeker VALUES
 (NUll,'邓浩然','123456','2986125126@qq.com','1',2000-6);
 
+#用户表zp_user
+CREATE TABLE zp_user(
+	uid INT  PRIMARY KEY AUTO_INCREMENT,
+	uname VARCHAR(32),
+	upwd VARCHAR(32),
+	email VARCHAR(64),
+	phone VARCHAR(11),
+	avatar VARCHAR(128),
+	user_name VARCHAR(32),
+	gender INT
+);
+#添加数据
+INSERT INTO zp_user 
+VALUES("1","dingding","123456","123456@qq.com","13888888888","img/selectE_5.jpg"
+,"丁丁","0");
+
+#(2)创建表  zp_login
+CREATE TABLE zp_login(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  uname VARCHAR(50),
+  upwd  VARCHAR(32)
+);
+
+#(3)添加二条测试数据11:40
+INSERT INTO zp_login VALUES(null,'tom',md5('123'));
+INSERT INTO zp_login VALUES(null,'jerry',md5('123'));
+
 
 #2.求职者详细信息表job_seeker_info(外键:主表id(job_seeker_id))
 CREATE TABLE job_seeker_info(
@@ -54,7 +81,7 @@ CREATE TABLE job_seeker_info(
     height VARCHAR(10),                                 #身高
     political VARCHAR(10),                              #政治面貌
     IDnumber VARCHAR(20),                               #身份证号
-    job_aeeker_id INT NOT NULL,                         #主表id
+    job_seeker_id INT NOT NULL,                         #主表id
     head_img_URL VARCHAR(50)                            #头像地址
 );
 INSERT INTO job_seeker_info VALUES
@@ -67,7 +94,7 @@ INSERT INTO job_seeker_info VALUES
 (NUll,'邓浩然','1999-04-04','专科','Web前端','15687069086','无',1,'重庆','无','昆明','2986125126@qq.com','IT','4k以上','汉族','未婚','云南曲靖','2020-06','2986125126','随时','157','共青团员','530321199904040922',1,'img/avatar/default.png');
 
 
-#3.反馈信息表feedback_info(外键：主表id(job_aeeker_id))
+#3.反馈信息表feedback_info(外键：主表id(job_seeker_id))
 #CURRENT_TIME获取当前系统默认时间
 #timestamp 用法详解
 CREATE TABLE feedback_info(
@@ -76,7 +103,7 @@ CREATE TABLE feedback_info(
     feedback_content text,                              #内容
     create_time DATE, #反馈时间
     contact VARCHAR(50),                                  #联系方式
-    job_aeeker_id INT NOT NULL                         #用户id
+    job_seeker_id INT NOT NULL                         #用户id
 );
 
 #4.城市列表job_city
@@ -553,13 +580,13 @@ o 客服及采购计划团队管理o 下达订单给相关的联系人。 在确
 
 #8.职位收藏表job_collection(外键:求职者id(job_seeker_id))
 CREATE TABLE job_collection(
-    job_collection INT PRIMARY KEY AUTO_INCREMENT,       #职位编号
+    job_collection_id INT PRIMARY KEY AUTO_INCREMENT,       #职位编号
     create_time DATE, #收藏时间
     job_seeker_id INT NOT NULL,                          #求职者
     job_full_info INT NOT NULL                           #发布者
 );
 
-#9.职位投递记录表job_delivery(外键：求职者id(job_aeeker_id))
+#9.职位投递记录表job_delivery(外键：求职者id(job_seeker_id))
 CREATE TABLE job_delivery(
     job_delivery_id INT PRIMARY KEY AUTO_INCREMENT,      #记录id
     create_time DATE, #投递时间
